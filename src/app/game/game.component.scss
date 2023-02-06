@@ -8,12 +8,20 @@
     align-items: center;
 }
 
+.player-c-position{
+    position: absolute;
+    right: 0;
+}
+
 .card-stack {
     position: relative;
+    top: 117px;
+    left: -81px;
+
     img {
         position: absolute;
-        height: 317px;
-        width: 247px;
+        height: 136px;
+        width: 100px;
     }
 }
 
@@ -25,6 +33,10 @@
     }
 }
 
+.played-card{
+    transform: scale(1.4) translateX(140px) translateY(-180px) rotate(-10deg);
+
+}
 .pickCard{
     animation: pickCard-animation 1.5s ease-in-out;
     transform: scale(1.4) translateX(340px) translateY(-380px) rotate(-10deg);
@@ -41,6 +53,19 @@
         transform: scale(1.7);
     }
     100%{
-        transform: scale(1.4) translateX(340px) translateY(-380px) rotate(-10deg);
+        transform: scale(1.4) translateX(140px) translateY(-180px) rotate(-10deg);
     }
+}
+
+.add-btn{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.gameInfo-c-position{
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+    left: 100px;
 }
