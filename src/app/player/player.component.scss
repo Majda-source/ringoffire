@@ -21,4 +21,12 @@
 
 .player-active{
  background-color: orange;
+     img{
+        height: 60px;
+        height: 60px;
+     }
+
+     span::after{
+        content: " (your Turn)";
+     }
 }

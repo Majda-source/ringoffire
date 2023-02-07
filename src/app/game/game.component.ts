@@ -9,7 +9,7 @@ import { DialogAddPlayerComponent } from '../dialog-add-player/dialog-add-player
   styleUrls: ['./game.component.scss']
 })
 export class GameComponent implements OnInit {
-  imgNumber = -1;
+  imgNumber = 1;
   pickCardAnimation = false;
   currentCard: string = '';
   game: Game;
@@ -46,10 +46,10 @@ export class GameComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe((result: string) => {
       console.log('The dialog was closed', result);
-      if (result) {
+      if (result && result.length>0) {
         this.game.players.push(result);
         this.imgNumber++;
-        console.log('index of currentImg', this.imgNumber )
+        console.log('playerIndex', this.imgNumber )
    }
    });
   }

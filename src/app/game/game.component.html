@@ -3,7 +3,7 @@
 class="player-c-position" style="top: 100px;"
 [playerActive] = "i == game.currentPlayer"
 [name] = "player"
-[playerIndex] = "imgNumber + i"></app-player>
+[playerIndex] = "i"></app-player>
 <div class="gameField">
     <div class="card-stack">
         <!--card stack-->
@@ -20,7 +20,7 @@ class="player-c-position" style="top: 100px;"
     </div>
 </div>
 
-<app-game-info [card]="currentCard" class="gameInfo-c-position" *ngIf="currentCard"></app-game-info>
+<app-game-info [card]="currentCard" class="gameInfo-c-position" ></app-game-info>
 
 <button mat-fab color="primary" class="add-btn" (click)="openDialog()">
     <mat-icon>add</mat-icon>
